@@ -15,7 +15,7 @@ func main() {
 	normalDuck.Quack()
 	normalDuck.Fly()
 
-	fmt.Println("==================")
+	fmt.Println("======================")
 
 	rubberDuck := duck.Duck{
 		QuackBehaviour:   duck.MuteQuack,
@@ -26,7 +26,7 @@ func main() {
 	rubberDuck.Quack()
 	rubberDuck.Fly()
 
-	fmt.Println("==================")
+	fmt.Println("======================")
 
 	injuredDuck := duck.Duck{
 		QuackBehaviour:   duck.NormalQuack,
