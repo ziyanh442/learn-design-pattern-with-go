@@ -2,6 +2,10 @@
 
 Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable.
 
+### Observer Pattern
+
+Observer is a behavioral design pattern. In this pattern there are two roles: observer, and observable (or in this case, it's called subject). The subject keep track of observer, and which topic are they subscribed to, everytime something change in that topic the subject can then notify every subscriber by invoking a method in their interface.
+
 ### References
 
 - [Refactoring Guru](https://refactoring.guru/)
