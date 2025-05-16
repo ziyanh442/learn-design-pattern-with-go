@@ -6,6 +6,10 @@ Strategy is a behavioral design pattern that lets you define a family of algorit
 
 Observer is a behavioral design pattern. In this pattern there are two roles: observer, and observable (or in this case, it's called subject). The subject keep track of observer, and which topic are they subscribed to, everytime something change in that topic the subject can then notify every subscriber by invoking a method in their interface.
 
+### Decorator Pattern
+
+Decorator is a structural design pattern where there is a base implementation with addon implementation that "is" the same interface but also "has a" same interface. this way, a base implementation can be decorated with multiple add ons that add new functionality to the same method from the same interface.
+
 ### References
 
 - [Refactoring Guru](https://refactoring.guru/)
