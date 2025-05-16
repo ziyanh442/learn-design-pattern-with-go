@@ -3,27 +3,36 @@ package main
 import (
 	"3decorator/addon"
 	"3decorator/base"
+	"3decorator/interfaces"
 	"encoding/json"
 	"fmt"
 )
 
 func main() {
 	var jcart []byte
+	var user interfaces.UserInterface
 
 	fmt.Println("All data:")
-	luoJi := base.NewUser()
-	personalDecorator := addon.NewPersonalAddOn(luoJi)
-	workDecorator := addon.NewWorkAddOn(personalDecorator)
-	residenceDecorator := addon.NewResidenceAddOn(workDecorator)
+	user = base.NewUser()
+	user = addon.NewPersonalAddOn(user)
+	user = addon.NewWorkAddOn(user)
+	user = addon.NewResidenceAddOn(user)
 
-	jcart, _ = json.MarshalIndent(residenceDecorator.GetData(), "", "\t")
+	jcart, _ = json.MarshalIndent(user.GetData(), "", "\t")
 	fmt.Println(string(jcart))
 
 	fmt.Println("Only Personal and Work Data:")
-	luoJi_two := base.NewUser()
-	personalDecorator_two := addon.NewPersonalAddOn(luoJi_two)
-	workDecorator_two := addon.NewWorkAddOn(personalDecorator_two)
+	user = base.NewUser()
+	user = addon.NewPersonalAddOn(user)
+	user = addon.NewWorkAddOn(user)
 
-	jcart, _ = json.MarshalIndent(workDecorator_two.GetData(), "", "\t")
+	jcart, _ = json.MarshalIndent(user.GetData(), "", "\t")
+	fmt.Println(string(jcart))
+
+	fmt.Println("Only Personal Data:")
+	user = base.NewUser()
+	user = addon.NewPersonalAddOn(user)
+
+	jcart, _ = json.MarshalIndent(user.GetData(), "", "\t")
 	fmt.Println(string(jcart))
 }
