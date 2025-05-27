@@ -10,6 +10,10 @@ Observer is a behavioral design pattern. In this pattern there are two roles: ob
 
 Decorator is a structural design pattern where there is a base implementation with addon implementation that "is" the same interface but also "has a" same interface. this way, a base implementation can be decorated with multiple add ons that add new functionality to the same method from the same interface.
 
+### Factory Method Pattern
+
+Factory method is a creational design pattern. In this pattern a product can be instantiated by a factory. A factory is an interface that implements a creation/instantiation, but this instantiation process is deferred to its subclasses, or in this case to its implementation. A simple factory pattern is exactly this except it directly uses concrete implementation of a factory instead of using interface. 
+
 ### References
 
 - [Refactoring Guru](https://refactoring.guru/)
