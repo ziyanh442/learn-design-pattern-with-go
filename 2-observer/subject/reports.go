@@ -2,12 +2,12 @@ package subject
 
 import (
 	"fmt"
-	"math/rand/v2"
+	"math/rand"
 	"time"
 )
 
 func getRandomTemperature() int {
-	return rand.IntN(35-25) + 25
+	return rand.Intn(35-25) + 25
 }
 
 func getRandomCrime() (string, string) {
@@ -18,7 +18,7 @@ func getRandomCrime() (string, string) {
 		"Hampden Meadows", "Humber Spinney", "Hovendens", "Henderson Terrace", "Hurst Cloisters", "Houghton Crescent", "Hill End Farm Lane", "Hermitage Ground", "Harbottle Crescent", "Holly Birches",
 	}
 
-	return crimes[rand.IntN(len(crimes))], streets[rand.IntN(len(streets))]
+	return crimes[rand.Intn(len(crimes))], streets[rand.Intn(len(streets))]
 }
 
 func (s *Subject) ReportWeather(duration time.Duration) {
