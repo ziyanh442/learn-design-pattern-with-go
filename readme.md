@@ -14,6 +14,10 @@ Decorator is a structural design pattern where there is a base implementation wi
 
 Factory method is a creational design pattern. In this pattern a product can be instantiated by a factory. A factory is an interface that implements a creation/instantiation, but this instantiation process is deferred to its subclasses, or in this case to its implementation. A simple factory pattern is exactly this except it directly uses concrete implementation of a factory instead of using interface. 
 
+### Abstract Factory Pattern
+
+Abstract factory is a creational design pattern that is very similar to factory method, it almost in every way is like factory method pattern except a single factory creates multiple products whether they are of the same type or not.
+
 ### References
 
 - [Refactoring Guru](https://refactoring.guru/)
