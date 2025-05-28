@@ -1,9 +1,9 @@
 package spawner
 
 import (
-	"4factorymethod/factory/interfaces"
+	"4factorymethod/factory/spawner/interfaces"
 	"4factorymethod/product/enemy"
-	enemyInterface "4factorymethod/product/interfaces"
+	enemyInterface "4factorymethod/product/enemy/interfaces"
 	"4factorymethod/product/model"
 )
 

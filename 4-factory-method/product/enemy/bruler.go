@@ -1,7 +1,7 @@
 package enemy
 
 import (
-	"4factorymethod/product/interfaces"
+	"4factorymethod/product/enemy/interfaces"
 	"4factorymethod/product/model"
 	"fmt"
 	"math/rand"

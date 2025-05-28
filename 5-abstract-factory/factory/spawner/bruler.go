@@ -1,7 +1,7 @@
 package spawner
 
 import (
-	"5abstractfactory/factory/interfaces"
+	"5abstractfactory/factory/spawner/interfaces"
 	"5abstractfactory/product/enemy"
 	eInterface "5abstractfactory/product/enemy/interfaces"
 	"5abstractfactory/product/weapon"

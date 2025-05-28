@@ -1,8 +1,8 @@
 package main
 
 import (
-	"5abstractfactory/factory/interfaces"
 	"5abstractfactory/factory/spawner"
+	"5abstractfactory/factory/spawner/interfaces"
 	"fmt"
 	"math/rand"
 )
@@ -13,9 +13,9 @@ func main() {
 
 	switch rand.Intn(3) {
 	case 0:
-		factory = spawner.NewLampmasterSpawner()
+		factory = spawner.NewLancelierSpawner()
 	case 1:
-		factory = spawner.NewLampmasterSpawner()
+		factory = spawner.NewBrulerSpawner()
 	case 2:
 		factory = spawner.NewLampmasterSpawner()
 	default:

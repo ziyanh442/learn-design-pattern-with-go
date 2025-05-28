@@ -1,8 +1,8 @@
 package main
 
 import (
-	"4factorymethod/factory/interfaces"
 	"4factorymethod/factory/spawner"
+	"4factorymethod/factory/spawner/interfaces"
 	"fmt"
 	"math/rand"
 )
