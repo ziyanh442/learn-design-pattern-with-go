@@ -7,28 +7,28 @@ type dbInterface interface {
 	Delete() string
 }
 
-type dbClass struct {
+type dbConcreteImpl struct {
 	id int //store a randomized integer just to illustrate we are still calling the same instance
 }
 
 func newDatabaseInstance(id int) dbInterface {
-	return &dbClass{
+	return &dbConcreteImpl{
 		id: id,
 	}
 }
 
-func (d *dbClass) GetID() int {
+func (d *dbConcreteImpl) GetID() int {
 	return d.id
 }
 
-func (d *dbClass) Select() string {
+func (d *dbConcreteImpl) Select() string {
 	return "calling Select method"
 }
 
-func (d *dbClass) Update() string {
+func (d *dbConcreteImpl) Update() string {
 	return "calling Update method"
 }
 
-func (d *dbClass) Delete() string {
+func (d *dbConcreteImpl) Delete() string {
 	return "calling Delete method"
 }
