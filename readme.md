@@ -18,6 +18,10 @@ Factory method is a creational design pattern. In this pattern a product can be 
 
 Abstract factory is a creational design pattern that is very similar to factory method, it almost in every way is like factory method pattern except a single factory creates multiple products that is closely related (whether they are of the same type or not).
 
+### Singleton Pattern
+
+Singleton is a creational design pattern where there can only be one instance of a thing while providing a global function to acquire this instance. Anywhere this global function is called, it always return the same instance.
+
 ### References
 
 - [Refactoring Guru](https://refactoring.guru/)
